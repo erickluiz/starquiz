@@ -1,0 +1,73 @@
+/* Basic ajustes */
+body {
+  background: #000;
+  color: #FFF; }
+
+h1 {
+  text-align: center; }
+
+.rules {
+  list-style: none; }
+
+.botao {
+  margin-top: 30px; }
+
+.modal-body, modal-title {
+  color: #000; }
+
+.btn-playgame {
+  display: block;
+  border: 1px #FFF solid;
+  padding: 10px;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFF; }
+  .btn-playgame:hover {
+    text-decoration: none;
+    color: #000;
+    background: #FFF; }
+
+/* Game */
+#gameplayer {
+  margin-top: 50px; }
+  #gameplayer span#timer {
+    font-size: 2.5rem;
+    float: right; }
+  #gameplayer .pagination-simple {
+    text-align: center; }
+    #gameplayer .pagination-simple button {
+      border: 1px solid #000;
+      background: #000;
+      color: #FFF;
+      cursor: pointer;
+      width: 100px;
+      height: 40px; }
+      #gameplayer .pagination-simple button:hover {
+        border: 1px solid #FFF; }
+  #gameplayer #listGamer {
+    min-height: 600px; }
+    #gameplayer #listGamer .thumbnail {
+      border-radius: 4px;
+      background: #FFF;
+      padding: 3px;
+      margin-bottom: 15px; }
+      #gameplayer #listGamer .thumbnail img {
+        width: 100%;
+        height: 140px;
+        -webkit-object-fit: contain;
+        object-fit: contain;
+        margin-bottom: 15px; }
+      #gameplayer #listGamer .thumbnail p {
+        text-align: center;
+        margin-top: 10px; }
+    #gameplayer #listGamer .accept {
+      border: 5px solid #1c7430; }
+    #gameplayer #listGamer .reject {
+      border: 5px solid #F33; }
+  #gameplayer #infodetails {
+    color: #000; }
+    #gameplayer #infodetails ul {
+      list-style: none; }
+
+/*# sourceMappingURL=styles.css.map */

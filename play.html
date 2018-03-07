@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Quiz - Game</title>
+
+    <!-- Plugins CSS-->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+</head>
+<body id="gameplayer">
+
+<main>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-10"><h1>Quiz Star Wars</h1></div>
+            <div class="col-md-2"><span id="timer" class="pull-right">2:00</span><span style="float: right;margin-right: 10px;font-size: 35px;margin-top: 5px;"><i class="fa fa-clock"></i></span></div>
+        </div>
+
+
+        <div class="row" id="listGamer">
+
+           <!-- Ajax Request Gamer -->
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-12 pagination-simple">
+                <button id="previous" class="page" data-page="" >< Anterior</button>
+                <button id="next"     class="page" data-page=""  >Próximo ></button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Modals -->
+<!-- begin info personal -->
+<div class="modal fade" id="infoPersonal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoPersonalLabel" style="color: #000">Detalhes do Personagem</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="infodetails">
+                <div class="row">
+                    <div class="col-md-4"><img id="infoPicture" src="" alt=""></div>
+                    <div class="col-md-4">
+                            <ul>
+                                    <li><b>Especie:</b> <span id="especie"></span></li>
+                                    <li><b>Genero:</b> <span id="gender"></span></li>
+                                    <li><b>Altura:</b> <span id="height"></span></li>
+                                    <li><b>Cabelo:</b> <span id="hair_color"></span></li>
+                                    <li><b>Planeta:</b> <span id="planeta"></span></li>
+                                </ul>
+                        </div>
+                    <div class="col-md-12">
+                            <b>Filmes:</b> <span id="filmes"></span>
+                        </div>
+                    <div class="col-md-12">
+                            <b>Veiculos:</b> <span id="veiculos"></span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end info personal  -->
+
+<!-- begin end timer -->
+<div class="modal fade" id="endGame" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="endGameLabel" style="color: #000;">Fim de Jogo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12" style="text-align: center;">
+                    <h3>Fim de Jogo!</h3>
+                    <h2 id="pontuacao"></h2>
+                </div>
+                <div class="col-md-12">
+                    <form class="formEnd" action="" id="formEnd">
+                        <div class="form-group row">
+                            <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+                            <div class="col-sm-10">
+                                <input type="text"  class="form-control" id="nome" name="nome" placeholder="Seu Nome">
+                                <input type="hidden" name="pontuacao" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email"  class="form-control" id="email" name="email" placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-10">
+                                <a href="index.html" class="btn btn-warning"><i class="fa fa-reload"></i> Reiniciar</a>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="buttom" class="btn btn-primary pull-right" id="endGameSave">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end timer -->
+
+<!-- JS -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
